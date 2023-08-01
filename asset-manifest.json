@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/RomarioNik/pizza-shop-frontend.git/static/css/main.e6c13ad2.css",
-    "main.js": "/RomarioNik/pizza-shop-frontend.git/static/js/main.45ae8d68.js",
-    "index.html": "/RomarioNik/pizza-shop-frontend.git/index.html",
-    "main.e6c13ad2.css.map": "/RomarioNik/pizza-shop-frontend.git/static/css/main.e6c13ad2.css.map",
-    "main.45ae8d68.js.map": "/RomarioNik/pizza-shop-frontend.git/static/js/main.45ae8d68.js.map"
+    "main.css": "/pizza-shop-frontend/static/css/main.e6c13ad2.css",
+    "main.js": "/pizza-shop-frontend/static/js/main.3e5589ba.js",
+    "index.html": "/pizza-shop-frontend/index.html",
+    "main.e6c13ad2.css.map": "/pizza-shop-frontend/static/css/main.e6c13ad2.css.map",
+    "main.3e5589ba.js.map": "/pizza-shop-frontend/static/js/main.3e5589ba.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.45ae8d68.js"
+    "static/js/main.3e5589ba.js"
   ]
 }
