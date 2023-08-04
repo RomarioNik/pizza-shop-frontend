@@ -1,10 +1,26 @@
 {
   "files": {
-    "main.js": "/pizza-shop-frontend/static/js/main.99d8a740.js",
+    "main.js": "/pizza-shop-frontend/static/js/main.29bb527e.js",
+    "static/media/steak-menu.svg": "/pizza-shop-frontend/static/media/steak-menu.3761d9430524a2b0f6509d134e0a4fa4.svg",
+    "static/media/burger-menu.svg": "/pizza-shop-frontend/static/media/burger-menu.48e861f9adf62f950884ce8032397ee9.svg",
+    "static/media/logo.svg": "/pizza-shop-frontend/static/media/logo.90022c44becd610850138916f1d94f30.svg",
+    "static/media/dessert-menu.svg": "/pizza-shop-frontend/static/media/dessert-menu.738b6c0fc310382865f573c81e3a1ea1.svg",
+    "static/media/drink-menu.svg": "/pizza-shop-frontend/static/media/drink-menu.877d2bcbe72df86a586e1ef90b7dd077.svg",
+    "static/media/noodles-menu.svg": "/pizza-shop-frontend/static/media/noodles-menu.c28995187eeea99e33dcd7982cc2df14.svg",
     "index.html": "/pizza-shop-frontend/index.html",
-    "main.99d8a740.js.map": "/pizza-shop-frontend/static/js/main.99d8a740.js.map"
+    "static/media/cart.svg": "/pizza-shop-frontend/static/media/cart.e4019a15b1e795c77cf21e8bfcde7696.svg",
+    "static/media/pizza-menu.svg": "/pizza-shop-frontend/static/media/pizza-menu.6734502202579906efa2a1a25463dae5.svg",
+    "static/media/sushi-menu.svg": "/pizza-shop-frontend/static/media/sushi-menu.8f348a348abbebbaae8daf665386ff42.svg",
+    "static/media/instagram.svg": "/pizza-shop-frontend/static/media/instagram.b559792ee1dd9782203adee49b6480b7.svg",
+    "static/media/login-person.svg": "/pizza-shop-frontend/static/media/login-person.81aabbe4f1f2c69504ed9b5bd92fab69.svg",
+    "static/media/twitter.svg": "/pizza-shop-frontend/static/media/twitter.ca8804f833d9e4c97ae6e482a8925ba6.svg",
+    "static/media/phone-call.svg": "/pizza-shop-frontend/static/media/phone-call.96a69f3e3b9c2462b702ff8eefccb33b.svg",
+    "static/media/search.svg": "/pizza-shop-frontend/static/media/search.b1e63d4f700c8213c5047bb141951d36.svg",
+    "static/media/facebook.svg": "/pizza-shop-frontend/static/media/facebook.cf49238917907c23e9d1a51cdd3afb8b.svg",
+    "static/media/heart.svg": "/pizza-shop-frontend/static/media/heart.ea3a2f1bd4be31f53ee18c6e9eb2f09d.svg",
+    "main.29bb527e.js.map": "/pizza-shop-frontend/static/js/main.29bb527e.js.map"
   },
   "entrypoints": [
-    "static/js/main.99d8a740.js"
+    "static/js/main.29bb527e.js"
   ]
 }
