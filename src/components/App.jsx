@@ -7,6 +7,7 @@ import ProductsPage from "../pages/ProductPage";
 import FoodPage from "../pages/Foodpage";
 import WishlistPage from "../pages/WishlistPage";
 import CartPage from "../pages/CartPage";
+import LoginPage from "../pages/LoginPage";
 import NotFoundPage from "../pages/NotFoundPage";
 
 const App = () => {
@@ -20,8 +21,10 @@ const App = () => {
         <Route path="products" element={<ProductsPage />}>
           <Route path=":foodId" element={<FoodPage />} />
         </Route>
+
         <Route path="wishlist" element={<WishlistPage />} />
         <Route path="cart" element={<CartPage />} />
+        <Route path="login" element={<LoginPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
