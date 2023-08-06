@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Cross } from "../../images/icons/cross/cross.svg";
 
 export const BackDrop = styled.div`
   position: fixed;
@@ -32,4 +33,10 @@ export const ButtonClose = styled.button`
   right: 20px;
   z-index: 99;
   padding: 5px;
+`;
+
+export const IconCross = styled(Cross)`
+  width: 18px;
+  height: 18px;
+  fill: ${({ theme }) => theme.colors.textColor};
 `;

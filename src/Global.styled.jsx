@@ -1,10 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import { normalize } from "styled-normalize";
 
-console.log(normalize);
 const GlobalStyle = createGlobalStyle`
-${"" /* ${normalize} */}
-${"" /* ${() => normalize} */}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 

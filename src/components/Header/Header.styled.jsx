@@ -18,6 +18,7 @@ import { ReactComponent as Noodles } from "../../images/icons/menu/noodles-menu.
 import { ReactComponent as Steak } from "../../images/icons/menu/steak-menu.svg";
 import { ReactComponent as Dessert } from "../../images/icons/menu/dessert-menu.svg";
 import { ReactComponent as Drink } from "../../images/icons/menu/drink-menu.svg";
+import { ReactComponent as CrossCircular } from "../../images/icons/cross/cross-circular.svg";
 
 export const HeaderWrapper = styled.header`
   width: 100%;
@@ -231,3 +232,59 @@ export const IconDrink = styled(Drink)`
 `;
 
 export const TextMenu = styled.span``;
+
+export const ModalContent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`;
+
+export const FormStyled = styled.form`
+  position: relative;
+  width: 100%;
+  width: 100%;
+  max-width: 600px;
+`;
+
+export const Label = styled.label``;
+
+export const ButtonClear = styled.button`
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(58, 61, 73, 0.3);
+  opacity: 0;
+  transition: opacity ${({ theme }) => theme.transition.baseTransition};
+`;
+
+export const Input = styled.input`
+  width: 100%;
+  max-width: 600px;
+  height: 48px;
+  padding-right: 65px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(24 / 14);
+  color: ${({ theme }) => theme.colors.textColor};
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(58, 61, 73, 0.3);
+
+  &:focus {
+    border-bottom-color: ${({ theme }) => theme.colors.headerColor};
+  }
+
+  &:not(:placeholder-shown) + ${ButtonClear} {
+    opacity: 1;
+  }
+`;
+
+export const IconCrossCircular = styled(CrossCircular)`
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+`;

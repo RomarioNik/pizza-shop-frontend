@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useMemo, useEffect } from "react";
+import debounce from "lodash.debounce";
 import {
   HeaderWrapper,
   HeaderUp,
@@ -34,15 +35,48 @@ import {
   IconDessert,
   IconDrink,
   TextMenu,
+  ModalContent,
+  FormStyled,
+  Label,
+  Input,
+  ButtonClear,
+  IconCrossCircular,
 } from "./Header.styled";
 import Modal from "../Modal";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [searchText, setSearchText] = useState("");
 
   const toggleModal = () => {
     setIsModalOpen((prev) => !prev);
+  };
+
+  const func = () => {
+    console.log("request to base");
+  };
+
+  const debouncedChangeHandler = useMemo(() => debounce(func, 500), []);
+
+  useEffect(() => {
+    return () => {
+      debouncedChangeHandler.cancel();
+    };
+  }, [debouncedChangeHandler]);
+
+  const handleChange = (e) => {
+    setSearchText(e.target.value.trim());
+
+    if (e.target.value.trim() === "") {
+      return;
+    }
+
+    debouncedChangeHandler();
+  };
+
+  const clearInput = () => {
+    setSearchText("");
   };
 
   const modalPosition = `
@@ -208,7 +242,8 @@ const Header = () => {
             customPosition={modalPosition}
             customAnimate={customAnimate}
           >
-            <motion.p
+            <ModalContent
+              as={motion.div}
               initial={{
                 opacity: 0,
                 x: "100%",
@@ -224,12 +259,26 @@ const Header = () => {
                 opacity: 0,
                 x: "100%",
                 transition: {
-                  duration: 0.3,
+                  duration: 0.2,
                 },
               }}
             >
-              New text content
-            </motion.p>
+              <FormStyled>
+                <Label htmlFor="search">What are you looking for?</Label>
+                <Input
+                  value={searchText}
+                  onChange={handleChange}
+                  type="text"
+                  id="search"
+                  autoFocus
+                  placeholder="Start typing..."
+                />
+                <ButtonClear onClick={clearInput} type="button">
+                  <IconCrossCircular />
+                  Clear
+                </ButtonClear>
+              </FormStyled>
+            </ModalContent>
           </Modal>
         )}
       </AnimatePresence>

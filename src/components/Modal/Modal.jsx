@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BackDrop, ModalWindow, ButtonClose } from "./modal.styled";
+import { BackDrop, ModalWindow, ButtonClose, IconCross } from "./modal.styled";
 import { motion } from "framer-motion";
 
 const Modal = ({ onToggleModal, customPosition, customAnimate, children }) => {
@@ -65,7 +65,7 @@ const Modal = ({ onToggleModal, customPosition, customAnimate, children }) => {
         exit={{ ...customAnimate.exit }}
       >
         <ButtonClose onClick={onToggleModal} type="button">
-          X
+          <IconCross />
         </ButtonClose>
         {children}
       </ModalWindow>
